@@ -1,0 +1,26 @@
+
+$my-color: darkred;
+$my-color2: #3b4f8b;
+
+h1 {
+    color: $my-color2;
+}
+
+.parent {
+    width: 600px;
+    height: 200px;
+    background: $my-color;
+    margin: 0 auto;
+
+    & .child {
+        width: 400px;
+        height: 100px;
+        margin: 50px 100px;
+        display: inline-block;
+        background: $my-color2;
+
+        & h1 {
+            color: $my-color;
+        }
+    }
+}
